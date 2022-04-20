@@ -87,12 +87,5 @@ def running_sums(numbers):
         sum_list[idx] = sum_of_elements
     return sum_list
 #print(running_sums([5,4,2,1,5,6,4]))
-def replace(lst, target, swap_value):
-    # Write your code here.
- print(lst)
-   for idx,strValues in enumerate(lst):
-       if(strValues == target):
-           lst[idx]=swap_value
-#print(lst)
-replace(["hi","this", "is"],"is","was")
+
     
