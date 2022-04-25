@@ -1,4 +1,4 @@
-
+import random
 
 def contains (data, target):
     for item in data:
@@ -87,5 +87,18 @@ def running_sums(numbers):
         sum_list[idx] = sum_of_elements
     return sum_list
 #print(running_sums([5,4,2,1,5,6,4]))
+def range_values():
+    for range_val in range (50, 81, 10):
+        print (range_val , end = "!!")
+    for i in range(8,-9,-2):
+        print(i, end = " ")
+#range_values() 
+def list_comp():
+    list = [2**i for i in range (0,9)] # 1,2,4,8, 16, 32,64, 128, 256
+    return list
+#print(list_comp())
 
-    
+#print(random.choice([1,2,3,4,5,6]))
+def customchoice(list):
+   return list[random.randrange(0,len(list))]
+print(customchoice([5,6,2,3,-1,-4]))

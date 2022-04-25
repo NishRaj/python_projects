@@ -1,4 +1,26 @@
-string1 = "Hello"
-string2 = "nishank"
-for char in string1:
-    print(char, end = '\n')
+class Animal:
+    def __init__(self, age, weight, height):
+        self.age = age
+        self.weight = weight
+        self.height = height
+
+class Reptile(Animal):
+    def __init__(self, age, weight, height, legs):
+        super().__init(age, weight, height)
+        self.legs = legs
+
+class Mammal(Animal):
+    def __init__(self, age, weight, height, sex):
+        super().__init__(age, weight, height)
+        self.sex = sex
+class Monkey(Mammal):
+    def __init__(self, age, weight, height, sex, color):
+        super().__init__(age, weight, height, sex)
+        self.color = color
+        self.fingers = 5
+
+class Lizard(Reptile):
+    tail = True 
+    def __init__(self, age, weight, height, legs, color):
+        super().__init__(age, weight, height, legs)
+        self.color = color
