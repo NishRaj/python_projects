@@ -29,17 +29,24 @@
 # python_string = " & ".join(python_list);
 # print(python_string);
 # #Length of the list
-# list_cal_length = [1,2,2,3,4,5,6,7];
+list_cal_length = [1,2,2,3,4,5,6,7];
 # print(len(list_cal_length));
 # #nested lists
 # nest_list = [[1,2,2,4], ['Hi','this','is','Nirvi'], ['Hey','dont','forget','Abhyuday']];
 # print(nest_list[0]);
 # print(nest_list[1][3]);
-# x1 = [1,2,3,1,1,1]
-# list_cal_length.extend(x1)
-# print(list_cal_length)
+x1 = [1,2,3,1,1,1]
+list_cal_length.extend(x1)
+print(set(list_cal_length))
 
 my_list = [1,2,3,4,2,1,5,6,7,8,9]
-new_list = my_list[::-1]
+my_list = my_list[::-1]
 #9,7,5,2,3,1
-print(new_list)
+print(my_list)
+new_list = my_list.copy()
+new_list.append(100)
+print(my_list)
+print_nisahnk = "nishank"
+list_nishank = list(print_nisahnk)
+for char in list_nishank:
+    print(char,end=',')

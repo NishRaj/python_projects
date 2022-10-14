@@ -21,6 +21,6 @@ class OddProducts:
         return True               
 
 
-
-op = OddProducts([1,1,4,5,5])
-print(op.is_distinct_number())
+if __name__ == 'main':
+    op = OddProducts([1,4,5])
+    print(op.is_distinct_number())

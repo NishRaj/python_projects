@@ -17,6 +17,12 @@ class Range:
             if not 0 <= k < self._length:
                 raise IndexError("Index out of range")
             return self._start + k* self._step
+    def new_range(self, start, stop , step):
+        current = start
+        while current <= stop:
+            yield current
+            current += current + step
+        
 
 r = Range(0,10,2)
 for i in r:

@@ -99,6 +99,19 @@ def list_comp():
 #print(list_comp())
 
 #print(random.choice([1,2,3,4,5,6]))
-def customchoice(list):
+def customchoice(list : list) -> int:
    return list[random.randrange(0,len(list))]
-print(customchoice([5,6,2,3,-1,-4]))
+print(type(customchoice([5,6,2,3,-1,-4])))
+
+def searchForLetters(phrase:str, letters:str="aeoui") -> set:
+    return set(letters).intersection(set(phrase))
+
+def double(args):
+    print('Before:', args)
+    args.extend([5,6,7])
+    print('After:', args)
+
+#print(searchForLetters("Hi my name is Anthony Gonzalves"))
+int_list = [1,2,3]
+double(int_list)
+print(int_list)
