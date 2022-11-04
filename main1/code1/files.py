@@ -1,23 +1,20 @@
-with open("/home/nishank/notebooks/code/file.txt", "r") as files:
-    line1 = files.readlines()
-    line2 = files.readlines()
-    print(line1)
-    '''
-    Files cannot be read after reading.
-    '''
-    print(line2)
+import os
+print(os.getcwd())
+with open("file.txt", "r") as files:
+   for line in files.readlines():
+    print(line)
 
 '''
 File writing
 '''
-with open("/home/nishank/notebooks/code/file.txt","w") as files:
-    files.write("I am good!")
+with open("file.txt","w") as files:
+    files.write("I am good!\n")
 
 '''
 File appending. It appends at the last of file.
 '''
-with open("/home/nishank/notebooks/code/file.txt","a") as files:
-    files.write("\nHow about you!")
+with open("file.txt","a") as files:
+    files.write("How about you!")
 
 '''
 R plus mode

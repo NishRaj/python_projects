@@ -8,7 +8,9 @@ Created on Mon Aug 30 12:44:00 2021
 
 student_list = ['A','a','B','B','C','c','D','D'];
 student_set = set(student_list);
-print(student_set);
+
+student_set.add('7')
+print(student_set)
 student_list2 = ['A','B','c','d'];
 student_set2 = set(student_list2);
 print(student_set2);

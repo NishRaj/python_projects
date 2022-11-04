@@ -1,3 +1,5 @@
+import sys
+print(sys.path)
 word = "bottles"
 for beer_num in range(3, 0, -1):
     print(beer_num, word, "of beer on the wall.")
