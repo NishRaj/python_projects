@@ -52,9 +52,8 @@ def get_team_wins(team_names, games_played) -> dict:
     return team_wins
 def pair_teams(team_wins) -> str:
     team_wins_sorted = sorted(team_wins.items(), key = lambda item : item[1])
-    #print(team_wins_sorted)
     game_generated_str = ""
-    for idx in range(int(len(team_wins_sorted)/2)):
+    for idx in range(len(team_wins_sorted)//2):
         game_generated_str +=  'Home: ' +  team_wins_sorted[idx][0] + ' VS Away: ' + team_wins_sorted[-(idx+1)][0] + '\n'
     return game_generated_str
     
