@@ -16,4 +16,4 @@ It has run {self.kms} and its condition is {self.condition}")
             print(f"The make and model of the car is {self.make} {self.model}.It is manufactured in {self.year}.")
 
 car = OptionalParameters('Skoda', 'Octavia', '2016', 'old', 35000)
-car.display(True)
+car.display(False)
