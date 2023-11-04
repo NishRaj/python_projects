@@ -40,7 +40,7 @@ list_cal_length.extend(x1)
 print(set(list_cal_length))
 
 my_list = [1,2,3,4,2,1,5,6,7,8,9]
-my_list = my_list[::-1]
+my_list[::-1]
 #9,7,5,2,3,1
 print(my_list)
 new_list = my_list.copy()

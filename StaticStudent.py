@@ -6,7 +6,7 @@ class Student:
     
     @classmethod
     def average_grades(cls,grades):
-        print("class")
+        print(cls)
         return (sum(grades) + cls.grace)/len(grades)
     
     @staticmethod

@@ -19,7 +19,31 @@ shape = np.shape(randArr)
 #print(shape)
 #Create an array using list list_1 = [10,11,12,13] and list_2 = [15,12,13,14] 
 # and print the shape and dimension of the array created.
-arr1 = np.array([[10,11,12,13],[15,12,13,14]])
+arr1 = np.array([[10,11,12,13],[15,12,13,14], [12,12,11, 12]])
 print(arr1.shape)
 print(arr1.ndim)
 print(arr1)
+arr2 = np.ones((4,4), dtype=float)
+print(arr2*10)
+print(arr2 + arr2)
+print(arr2.ndim)
+arr3 = np.empty((2,3,2))
+print(arr3)
+print(arr3.ndim)
+
+arr4 = np.ones_like(arr3)
+print(arr4)
+
+arr5 = np.eye(3)
+print(arr5)
+# Convert one type to another
+print(arr5.astype(complex))
+
+#Convert first array type to second array type where you don't know type of second array
+int_arr = np.arange(10)
+float_arr = np.array([.1, .2, .3, .4, .5], dtype=np.float64)
+print(int_arr.astype(float_arr.dtype))
+
+#Operations between two similar sized arrays.
+print(arr5*arr5)
+print(arr5 + arr5)
